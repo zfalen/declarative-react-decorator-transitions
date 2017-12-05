@@ -1,0 +1,40 @@
+import React, { Component } from 'react';
+import TweenMax from 'gsap';
+
+import FadesUpAndDown from './fadesUpAndDown';
+
+//styles
+import './App.scss';
+
+@FadesUpAndDown
+class Box extends Component {
+  render() {
+    return (
+      <div className="box">I am Box</div>
+    );
+  }
+}
+
+class App extends Component {
+
+  state = {
+    showingBox: true
+  }
+
+  toggleBox = () => {
+    this.setState({showingBox: !this.state.showingBox});
+  }
+
+  render() {
+
+    return (
+      <div className="App">
+        <h1>hello world</h1>
+        <button onClick={this.toggleBox}>TOGGLE BOX</button>
+        <Box showingBox={this.state.showingBox} />
+      </div>
+    );
+  }
+}
+
+export default App;
