@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
 import TweenMax from 'gsap';
-
 import TransitionWrapper from "./transitionWrapper";
-
 
 export default function FadesUpAndDown(ChildComponent){
 

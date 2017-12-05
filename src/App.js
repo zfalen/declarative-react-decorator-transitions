@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import TweenMax from 'gsap';
 
-import FadesUpAndDown from './fadesUpAndDown';
-import BounceInAndOut from './bounceInAndOut';
+import FadesUpAndDown from './transitions/fadesUpAndDown';
+import BounceInAndOut from './transitions/bounceInAndOut';
 
 //styles
-import './App.scss';
+import './styles/App.scss';
 
 @FadesUpAndDown
 class Box extends Component {
