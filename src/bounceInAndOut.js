@@ -6,7 +6,7 @@ import TransitionWrapper from "./transitionWrapper";
 
 export default function BounceInAndOut(ChildComponent){
 
-  const animationDuration = .5;
+  const animationDuration = .25;
 
   let inTransition = (elementToAnimate, doneCallback) =>
     TweenMax.from(elementToAnimate, animationDuration, {scale: 0, ease: Back.easeOut, onComplete: doneCallback});
